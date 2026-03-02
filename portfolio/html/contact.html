@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+<form method="post">
+    <fieldset>
+        <legend>Registration Form</legend>
+
+        <table>
+
+            <tr>
+                <td><label for="first name">First Name:</label></td>
+                <td><input type="text" id="name" placeholder="Enter your first name" name="First name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="Last name">Last Name:</label></td>
+                <td><input type="text" id="name" placeholder="Enter your last name" name="last name" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" placeholder="Enter your email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="Region of Conatct">Region of Contact:</label></td>
+                <td>
+                    <select id="Region of Conatct" name="Region of Conatct">
+                        <option>projects</option>
+                        <option>Thesis</option>
+                        <option>Job</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Topics">Topics:</label></td>
+                <td>
+                    <select id="Topics" name="Topics">
+                        <option>Web Development</option>
+                        <option>Mobile Development</option>
+                        <option>AI/Ml Development</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Consultation Date">Consultation Date:</label></td>
+                <td><input type="date" id="Consultation Date" name="Consultation Date" required></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+
+        </table>
+
+    </fieldset>
+</form>
+</body>
+</html>

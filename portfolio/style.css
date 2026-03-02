@@ -1,0 +1,104 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #222;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background: #AA8F39;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #0d2cbe;
+    transform: scale(1.05);
+}
+
+/* ===== PROFILE SECTION ===== */
+#profile {
+    text-align: center;
+    padding: 30px;
+}
+
+figure img {
+    border-radius: 10px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 8px;
+    font-size: 22px;
+    color: #444;
+}
+
+#profile p {
+    font-size: 18px;
+}
+
+/* ===== ABOUT SECTION ===== */
+#about {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0 40px;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#about p {
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+/* ===== FOOTER ===== */
+footer {
+    background: #AA8F39;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+
