@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+/* Global */
 
 body{
 margin:0;
@@ -8,8 +8,7 @@ background:#f5f5f5;
 color:#222;
 }
 
-
-/* ===== NAVBAR ===== */
+/* Navigation */
 
 header{
 background:#AA8F39;
@@ -22,78 +21,75 @@ display:flex;
 justify-content:center;
 gap:25px;
 padding:0;
-margin:0;
 }
 
 nav ul li a{
 color:white;
 text-decoration:none;
 font-weight:600;
-padding:6px 12px;
-border-radius:5px;
-transition:0.2s;
 }
 
 nav ul li a:hover{
-background:#0a66c2;
+color:#0a66c2;
 }
 
-
-/* ===== MAIN CONTENT ===== */
+/* Main */
 
 main{
 width:80%;
-margin:20px auto;
+margin:30px auto;
 }
 
+h3{
+text-align:center;
+margin-bottom:20px;
+}
 
-/* ===== PROFILE CARD ===== */
+/* Contact Card */
 
-#profile{
+.contact-card{
 background:white;
-padding:25px;
-margin-bottom:25px;
+padding:30px;
 border-radius:8px;
 box-shadow:0 2px 6px rgba(0,0,0,0.1);
-text-align:center;
+max-width:500px;
+margin:auto;
 }
 
-#profile img{
-border-radius:8px;
-margin-bottom:10px;
+/* Form */
+
+.radio-group{
+display:flex;
+align-items:center;
+gap:15px;
 }
 
-#profile h1{
-margin:10px 0 5px;
-}
-
-#profile h2{
-color:#555;
-margin-bottom:10px;
-}
-
-
-/* ===== ABOUT CARD ===== */
-
-#about{
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-}
-
-#about h2{
-text-align:center;
+.form-group{
 margin-bottom:15px;
+display:flex;
+flex-direction:column;
 }
 
-#about p{
-line-height:1.7;
-margin-bottom:12px;
+input, select{
+padding:8px;
+border:1px solid #ccc;
+border-radius:4px;
 }
 
+button{
+padding:10px;
+background:#AA8F39;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
 
-/* ===== FOOTER ===== */
+button:hover{
+background:#8d762f;
+}
+
+/* Footer */
 
 footer{
 background:#AA8F39;

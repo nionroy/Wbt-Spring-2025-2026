@@ -1,75 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<link rel="stylesheet" href="../Css/contact.css">
 </head>
+
 <body>
+
+<!-- Header -->
+<header>
+<nav>
+<ul>
+<li><a href="../index.html">Home Page</a></li>
+<li><a href="educations.html">My Education</a></li>
+<li><a href="experience.html">My Experience</a></li>
+<li><a href="projects.html">My Projects</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Main Content -->
+<main>
+
+<section class="contact-section">
+
+<h3>Contact Me</h3>
+
+<div class="contact-card">
+
 <form method="post">
-    <fieldset>
-        <legend>Registration Form</legend>
 
-        <table>
+<div class="form-group">
+<label>First Name</label>
+<input type="text" placeholder="Enter your first name" required>
+</div>
 
-            <tr>
-                <td><label for="first name">First Name:</label></td>
-                <td><input type="text" id="name" placeholder="Enter your first name" name="First name" required></td>
-            </tr>
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" placeholder="Enter your last name" required>
+</div>
 
-            <tr>
-                <td><label for="Last name">Last Name:</label></td>
-                <td><input type="text" id="name" placeholder="Enter your last name" name="last name" required></td>
-            </tr>
+<div class="form-group">
+<label>Gender</label>
 
-            <tr>
-                <td><label>Gender:</label></td>
-                <td>
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
-                </td>
-            </tr>
+<div class="radio-group">
+<input type="radio" name="gender" id="male">
+<label for="male">Male</label>
 
-            <tr>
-                <td><label for="email">Email:</label></td>
-                <td><input type="email" id="email" placeholder="Enter your email" name="email" required></td>
-            </tr>
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+</div>
 
-            <tr>
-                <td><label for="Region of Conatct">Region of Contact:</label></td>
-                <td>
-                    <select id="Region of Conatct" name="Region of Conatct">
-                        <option>projects</option>
-                        <option>Thesis</option>
-                        <option>Job</option>
-                    </select>
-                </td>
-            </tr>
+</div>
 
-            <tr>
-                <td><label for="Topics">Topics:</label></td>
-                <td>
-                    <select id="Topics" name="Topics">
-                        <option>Web Development</option>
-                        <option>Mobile Development</option>
-                        <option>AI/Ml Development</option>
-                    </select>
-                </td>
-            </tr>
+<div class="form-group">
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
 
-            <tr>
-                <td><label for="Consultation Date">Consultation Date:</label></td>
-                <td><input type="date" id="Consultation Date" name="Consultation Date" required></td>
-            </tr>
+<div class="form-group">
+<label>Reason of Contact</label>
+<select>
+<option>Project</option>
+<option>Thesis</option>
+<option>Job</option>
+</select>
+</div>
 
-            <tr>
-                <td></td>
-                <td><button type="submit">Submit</button></td>
-            </tr>
+<div class="form-group">
+<label>Topics</label>
+<select>
+<option>Web Development</option>
+<option>Mobile Development</option>
+<option>AI / ML Development</option>
+</select>
+</div>
 
-        </table>
+<div class="form-group">
+<label>Consultation Date</label>
+<input type="date" required>
+</div>
 
-    </fieldset>
+<div class="form-group">
+<button type="submit">Submit</button>
+</div>
+
 </form>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+
+<p>© 2026 Niladri Roy Nion — All Rights Reserved</p>
+
+<div class="icon-container">
+
+<a href="https://www.linkedin.com/in/niladri-roy-nion-3761a0265/" target="_blank">
+<img src="../Data/linkedin.png" class="icon" height="20" width="20">
+</a>
+
+<a href="https://github.com/nionroy/" target="_blank">
+<img src="../Data/github-logo.png" class="icon" height="20" width="20">
+</a>
+
+</div>
+
+</footer>
+
 </body>
 </html>
