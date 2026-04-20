@@ -23,12 +23,12 @@ echo "VAT (15%) = $vat <br><br>";
 
 
 
-$num = 7;
+$num = 8;
 
 if ($num % 2 == 0) {
-    echo "$num is Even <br><br>";
+    echo "$num is Even number  <br><br>";
 } else {
-    echo "$num is Odd <br><br>";
+    echo "$num is Odd odd number <br><br>";
 }
 
 
