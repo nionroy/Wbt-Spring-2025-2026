@@ -1,15 +1,42 @@
+<?php
+$errors = [];
+$fname = $lname = $gender = $email = $reason = $topic = $date = "";
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    if(empty($_POST["fname"])) $errors["fname"] = "Required";
+    else $fname = $_POST["fname"];
+
+    if(empty($_POST["lname"])) $errors["lname"] = "Required";
+    else $lname = $_POST["lname"];
+
+    if(empty($_POST["gender"])) $errors["gender"] = "Required";
+    else $gender = $_POST["gender"];
+
+    if(empty($_POST["email"])) $errors["email"] = "Required";
+    else $email = $_POST["email"];
+
+    if(empty($_POST["reason"])) $errors["reason"] = "Required";
+    else $reason = $_POST["reason"];
+
+    if(empty($_POST["topic"])) $errors["topic"] = "Required";
+    else $topic = $_POST["topic"];
+
+    if(empty($_POST["date"])) $errors["date"] = "Required";
+    else $date = $_POST["date"];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Me</title>
 <link rel="stylesheet" href="../Css/contact.css">
 </head>
 
 <body>
 
-<!-- Header -->
 <header>
 <nav>
 <ul>
@@ -21,9 +48,7 @@
 </nav>
 </header>
 
-<!-- Main Content -->
 <main>
-
 <section class="contact-section">
 
 <h3>Contact Me</h3>
@@ -34,53 +59,57 @@
 
 <div class="form-group">
 <label>First Name</label>
-<input type="text" placeholder="Enter your first name" required>
+<input type="text" name="fname" value="<?= $fname ?>">
+<span class="error"><?= $errors["fname"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
 <label>Last Name</label>
-<input type="text" placeholder="Enter your last name" required>
+<input type="text" name="lname" value="<?= $lname ?>">
+<span class="error"><?= $errors["lname"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
 <label>Gender</label>
-
 <div class="radio-group">
-<input type="radio" name="gender" id="male">
-<label for="male">Male</label>
-
-<input type="radio" name="gender" id="female">
-<label for="female">Female</label>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
 </div>
-
+<span class="error"><?= $errors["gender"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
 <label>Email</label>
-<input type="email" placeholder="Enter your email" required>
+<input type="email" name="email" value="<?= $email ?>">
+<span class="error"><?= $errors["email"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
 <label>Reason of Contact</label>
-<select>
+<select name="reason">
+<option value="">Select</option>
 <option>Project</option>
 <option>Thesis</option>
 <option>Job</option>
 </select>
+<span class="error"><?= $errors["reason"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
 <label>Topics</label>
-<select>
+<select name="topic">
+<option value="">Select</option>
 <option>Web Development</option>
 <option>Mobile Development</option>
 <option>AI / ML Development</option>
 </select>
+<span class="error"><?= $errors["topic"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
 <label>Consultation Date</label>
-<input type="date" required>
+<input type="date" name="date">
+<span class="error"><?= $errors["date"] ?? "" ?></span>
 </div>
 
 <div class="form-group">
@@ -90,28 +119,11 @@
 </form>
 
 </div>
-
 </section>
-
 </main>
 
-<!-- Footer -->
 <footer>
-
 <p>© 2026 Niladri Roy Nion — All Rights Reserved</p>
-
-<div class="icon-container">
-
-<a href="https://www.linkedin.com/in/niladri-roy-nion-3761a0265/" target="_blank">
-<img src="../Data/linkedin.png" class="icon" height="20" width="20">
-</a>
-
-<a href="https://github.com/nionroy/" target="_blank">
-<img src="../Data/github-logo.png" class="icon" height="20" width="20">
-</a>
-
-</div>
-
 </footer>
 
 </body>
